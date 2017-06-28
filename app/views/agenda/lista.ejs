@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== VIEWPORT META ========== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- ========== PAGE TITLE ========== -->
+    <title>Agenda - Microvision</title>
+
+    <!-- ========== META TAGS ========== -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- ========== FAVICON & APPLE ICONS ========== -->    
+
+    <!-- ========== MINIFIED VENDOR CSS ========== -->
+    <link rel="stylesheet" href="styles/vendor.css">
+    <!-- ========== MAIN CSS ========== -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
+
+<body class="header-shadow light-header">
+    <!-- ========== HEADER ========== -->   
+                     
+        <!-- ========== HOVER ROWS ========== -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-header text-center">
+                        <h3 class="section-title underline">AGENDA DE CLIENTES</h3>
+                        
+                    </div> <!-- end section-header -->
+
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-hover">
+                            <caption>Clientes</caption>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nome</th>
+                                    <th>Celular</th>
+                                    <th>Email</th>
+                                    <th>CPF</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                              <% for(var i=0; i<lista.length; i++) {%>
+
+                                <tr>
+                                    <th><%= lista[i].id %></th>
+                                    <th><%= lista[i].Nome %></th>
+                                    <th><%= lista[i].Celular %></th>
+                                    <th><%= lista[i].email %></th>
+                                    <th><%= lista[i].cpf %></th>
+                                </tr>
+
+                              <% } %>                              
+                              
+                            </tbody>
+                        </table>
+                    </div> <!-- end col-md-6 -->          
+
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+
+    </div> <!-- end main -->
+
+    <!-- ==================================================
+    Footer: Classes
+    footer - Default footer
+    dark-footer - Dark footer [Use with .footer]
+    sticky-footer - Reveal footer on scroll
+    ================================================== -->
+  
+	<script src="scripts/vendor.js"></script>
+
+	<script src="scripts/plugins.js"></script>
+
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
